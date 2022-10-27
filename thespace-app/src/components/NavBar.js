@@ -5,7 +5,8 @@ function NavBar() {
   return (
     <div className='nav'>
       <Link className='navtxt'to='/'><span >Home</span></Link>
-      <Link className='navtxt' to='gallery'><span >Gallery</span></Link>
+      <Link className='navtxt' to='gallery'><span >Explore</span></Link>
+      <Link className='navtxt' to='liked'><span >Collection</span></Link>
     </div>
   )
 }

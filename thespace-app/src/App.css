@@ -33,7 +33,7 @@
   justify-content:space-around;
     background-color: black;
     padding: 15px;
-    font-size: 2em;
+    font-size: 25px;
   }
   .navtxt{
     color: rgb(243, 240, 234);
@@ -50,11 +50,27 @@ max-width: 300px;
   max-height: 400px;
   min-height: 400px;
 }
+.likedcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+ 
+}
+.eachcardliked{
+  margin: 20px;
+max-width: 300px;
+  min-width: 300px;
+  max-height: 400px;
+  min-height: 400px;
+}
 .image{
   max-width: 300px;
   min-width: 300px;
   max-height: 250px;
   min-height: 250px;
+}
+.btn-primary{
+background-color: blueviolet;
 }
 
   .container {
