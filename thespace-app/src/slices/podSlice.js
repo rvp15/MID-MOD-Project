@@ -1,18 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState ={
-    pod: {}
-}
+const initialState = {
+  podData: {},
+};
 export const podSlice = createSlice({
-    name: 'pod',
-    initialState,
-    reducers: {
-      setpod:(state,action)=>{
-        state.pod = action.payload
-        }
-    }
-})
+  name: "pod",
+  initialState,
+  reducers: {
+    setpod: (state, action) => {
+      state.podData = action.payload;
+    },
+  },
+});
 
-export const {setpod} = podSlice.actions
+export const { setpod } = podSlice.actions;
 
-export default podSlice.reducer
+export default podSlice.reducer;
