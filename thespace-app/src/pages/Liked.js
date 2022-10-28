@@ -1,5 +1,8 @@
 import React from 'react'
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setremoveliked } from "../slices/likedSlice";
+
 import {
   MDBCard,
   MDBCardBody,
@@ -10,7 +13,7 @@ import {
 
 
 function Liked() {
-
+  const dispatch = useDispatch();
   const {likeddata} = useSelector((state)=>state.liked)
 console.log(likeddata)
 
@@ -23,7 +26,7 @@ console.log(likeddata)
         <MDBCardImage className="image" src={item.url} position='top'/>
         <MDBCardBody>
         <MDBCardText>{item.title}</MDBCardText>
-        <MDBBtn>Remove</MDBBtn>
+        <MDBBtn onClick={() => dispatch(setremoveliked(item))}>Remove</MDBBtn>
         </MDBCardBody>
       </div>
       </MDBCard> 
