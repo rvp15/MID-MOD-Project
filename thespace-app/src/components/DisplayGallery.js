@@ -41,7 +41,7 @@ function DisplayGallery({ pictures }) {
               <div className="eachcardliked">
                 <MDBCardImage className="image" src={pic.url} fluid alt={pic.title} position='top'/>
                  <MDBCardBody>
-                  <MDBCardTitle>{pic.title}</MDBCardTitle>
+                  <MDBCardTitle className="title">{pic.title}</MDBCardTitle>
                   <div className="buttonsliked">
                   <Button
                     className="detailbtn"
