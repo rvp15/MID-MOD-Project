@@ -9,10 +9,10 @@
     padding: 30px;
 }
 .imagepod{
-    max-width: 40%;
-    max-height: 40%;
-    min-height: 40%;
-    min-width: 40%;
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
 }
 /* .gallery-container{
     display: flex;
@@ -25,7 +25,7 @@
     border: 1px solid black;
 } */
 *{
- 
+
 
 }
 .nav {
@@ -63,16 +63,30 @@ max-width: 300px;
   max-height: 400px;
   min-height: 400px;
 }
+.backcard{
+  margin: 20px;
+  max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+}
 .image{
   max-width: 300px;
   min-width: 300px;
   max-height: 250px;
   min-height: 250px;
 }
-.btn-primary{
-background-color: blueviolet;
-}
+.buttonsliked{
+display: flex;
+max-height: 50px;
 
+}
+.detailbtn{
+margin: 5px;
+width: fit-content;
+background-color: rgb(156, 151, 151) !important;
+
+}
   .container {
    display: flex;
    flex-wrap: wrap;
