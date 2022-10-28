@@ -40,16 +40,7 @@
     background: rgb(7, 6, 6);
     text-decoration: none;
   }
-.eachcard{
-background-color: rgb(182, 182, 182);
-border-radius: 10px;
-color: aliceblue;
-margin: 20px;
-max-width: 300px;
-  min-width: 300px;
-  max-height: 400px;
-  min-height: 400px;
-}
+
 .likedcontainer{
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +48,8 @@ max-width: 300px;
  
 }
 .eachcardliked{
+  background-color: rgb(182, 182, 182);
+border-radius: 10px;
   margin: 20px;
 max-width: 300px;
   min-width: 300px;
@@ -84,7 +77,7 @@ max-height: 50px;
 .detailbtn{
 margin: 5px;
 width: fit-content;
-background-color: rgb(156, 151, 151) !important;
+background-color: rgb(103, 100, 100) !important;
 
 }
   .container {
