@@ -17,6 +17,7 @@ import {
   MDBRipple,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 function DisplayGallery({ pictures }) {
   const [show, setShow] = useState(false);
@@ -39,7 +40,10 @@ function DisplayGallery({ pictures }) {
               className="bg-image hover-overlay"
             >
               <div className="eachcardliked">
-                <MDBCardImage className="image" src={pic.url} fluid alt={pic.title} position='top'/>
+             
+                   <MDBCardImage className="image" src={pic.url} fluid alt={pic.title} position='top'/>
+           
+               
                  <MDBCardBody>
                   <MDBCardTitle className="title">{pic.title}</MDBCardTitle>
                   <div className="buttonsliked">

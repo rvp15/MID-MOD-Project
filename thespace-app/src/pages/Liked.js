@@ -13,6 +13,7 @@ import {
   MDBCardImage,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 function Liked() {
   const [show, setShow] = useState(false);
@@ -22,11 +23,14 @@ function Liked() {
 
   return (
     <div className="likedcontainer">
-      {likeddata?.map((item) => {
+      {likeddata?.map((item,i) => {
         return (
+          
           <MDBCard>
             <div className="eachcardliked">
+            <Link to={`/${i}`}>
               <MDBCardImage className="image" src={item.url} position="top" />
+              </Link>
               <MDBCardBody>
                 <MDBCardText>{item.title}</MDBCardText>
                 <div className="buttonsliked">
