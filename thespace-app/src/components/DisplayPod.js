@@ -11,7 +11,7 @@ function DisplayPod({ podphoto }) {
       <p className="description">{podphoto.explanation}</p>
       <footer className="footer">
       <p>All Content are taken from NASA open source API - Copyright&#169; NASA </p>
-       <span>- Designed By Priya</span>
+       <span>- Designed By Vedhapriya</span>
       </footer>
     </div>
   );
