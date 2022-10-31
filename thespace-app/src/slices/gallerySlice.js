@@ -12,7 +12,7 @@ export const gallerySlice = createSlice({
     },
   },
 });
-
+//exporting reducer
 export const { setGalleryPics } = gallerySlice.actions;
 
 export default gallerySlice.reducer;

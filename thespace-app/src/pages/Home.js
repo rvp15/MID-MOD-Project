@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import DisplayPod from "../components/DisplayPod";
 import { setpod } from "../slices/podSlice";
 import { useDispatch } from "react-redux";
+import Video from "../components/Video";
 
 function Home() {
   const apiKey = process.env.REACT_APP_API;
@@ -34,6 +35,11 @@ function Home() {
   return (
     <div>
       <DisplayPod podphoto={podData} />
+      <Video/>
+      <footer className="footer">
+      <p>All Content are taken from NASA open source API - Copyright&#169; NASA </p>
+       <span>- Designed By Vedhapriya</span>
+      </footer>
     </div>
   );
 }
