@@ -11,7 +11,7 @@ export default function Details() {
  return (
     <div className='detail'>
       <h1>{detaildata.title}</h1>
-      <img src={detaildata.url} className="image" alt={detaildata.title}/>
+      <img src={detaildata.url} className="imagepod" alt={detaildata.title}/>
       <h2>Captured on:{detaildata.date}</h2>
       <h3>{detaildata.copyright}</h3>
       <p>{detaildata.explanation}</p>

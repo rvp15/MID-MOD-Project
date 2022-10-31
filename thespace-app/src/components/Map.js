@@ -7,6 +7,7 @@ const Map = ({ center, zoom, eventData }) => {
   console.log(fireEvents);
   return (
     <div className="map">
+       <h3 className="titlemap">Explore WildFire around the world </h3>
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
         defaultCenter={center}

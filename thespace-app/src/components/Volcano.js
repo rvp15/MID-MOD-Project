@@ -7,11 +7,13 @@ const Map = ({ center, zoom, volcanoData }) => {
   console.log(volcanoEvents);
   return (
     <div className="map">
+         <h3 className="titlemap">Explore Active Volcano around the world </h3>
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
         defaultCenter={center}
         defaultZoom={zoom}
       >
+       
         {volcanoEvents.map((item,i) => {
           return <VolcanoMarker
               lat={item.geometries[0].coordinates[1]}
