@@ -26,7 +26,7 @@ function Liked() {
       {likeddata?.map((item,i) => {
         return (
           
-          <MDBCard>
+          <MDBCard  key={i}>
             <div className="eachcardliked">
             <Link to={`/${i}`}>
               <MDBCardImage className="image" src={item.url} position="top" />

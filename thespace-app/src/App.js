@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery';
 import Liked from './pages/Liked';
 import MapPage from './pages/MapPage';
 import Details from './components/Details';
+import VolcanoPage from './pages/VolcanoPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='/:id' element={<Details/>}/>
       <Route path='/liked' element={<Liked/>}/>
       <Route path='/wildfire' element={<MapPage/>}/>
+      <Route path='/volcano' element={<VolcanoPage/>}/>
      </Routes>
     
     </div>

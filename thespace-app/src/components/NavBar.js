@@ -8,6 +8,7 @@ function NavBar() {
       <Link className='navtxt' to='gallery'><span >Explore</span></Link>
       <Link className='navtxt' to='liked'><span >Collection</span></Link>
       <Link className='navtxt' to='wildfire'><span >WildFire</span></Link>
+      <Link className='navtxt' to='volcano'><span >Volcano</span></Link>
     </div>
   )
 }

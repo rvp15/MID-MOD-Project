@@ -11,13 +11,13 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
+  // MDBCardText,
   MDBCardImage,
   MDBBtn,
   MDBRipple,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { Link } from "react-router-dom";
+
 
 function DisplayGallery({ pictures }) {
   const [show, setShow] = useState(false);
@@ -28,6 +28,7 @@ function DisplayGallery({ pictures }) {
     return findItem ? true : false;
   };
 
+  
   return (
     <div className="container">
       {pictures?.map((pic, i) => {
@@ -42,9 +43,8 @@ function DisplayGallery({ pictures }) {
               <div className="eachcardliked">
              
                    <MDBCardImage className="image" src={pic.url} fluid alt={pic.title} position='top'/>
-           
-               
-                 <MDBCardBody>
+                  
+                  <MDBCardBody>
                   <MDBCardTitle className="title">{pic.title}</MDBCardTitle>
                   <div className="buttonsliked">
                   <Button

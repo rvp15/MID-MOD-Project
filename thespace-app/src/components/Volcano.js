@@ -1,10 +1,10 @@
 import GoogleMapReact from "google-map-react";
 import React from "react";
-import LocationMarker from "./LocationMarker";
+import VolcanoMarker from "./VolcanoMarker";
 
-const Map = ({ center, zoom, eventData }) => {
-  const fireEvents = eventData.filter((item) => item.categories[0].id === 8);
-  console.log(fireEvents);
+const Map = ({ center, zoom, volcanoData }) => {
+  const volcanoEvents = volcanoData.filter((item) => item.categories[0].id === 12);
+  console.log(volcanoEvents);
   return (
     <div className="map">
       <GoogleMapReact
@@ -12,8 +12,8 @@ const Map = ({ center, zoom, eventData }) => {
         defaultCenter={center}
         defaultZoom={zoom}
       >
-        {fireEvents.map((item,i) => {
-          return <LocationMarker
+        {volcanoEvents.map((item,i) => {
+          return <VolcanoMarker
               lat={item.geometries[0].coordinates[1]}
               lng={item.geometries[0].coordinates[0]}
             />
@@ -25,10 +25,10 @@ const Map = ({ center, zoom, eventData }) => {
 
 Map.defaultProps = {
   center: {
-      lat: 42.3265,
-      lng: -122.8756
+      lat: 14.175630,
+      lng: 121.101214
   },
-  zoom: 5
+  zoom: 1
 }
 
 export default Map;

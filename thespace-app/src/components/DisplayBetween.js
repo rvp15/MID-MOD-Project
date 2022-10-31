@@ -11,11 +11,8 @@ function DisplayBetween() {
   const apiKey = process.env.REACT_APP_API;
 
   const dispatch = useDispatch();
-  // let [pod ,setPod] = useState({})
+
   const { galleryPics } = useSelector((state) => state.gallery);
-
-  // const [galleryPics, setGalleryPics] = useState(null)
-
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate, endDate] = dateRange;
   const startDateFormate = Moment(startDate).format("YYYY-MM-DD");
@@ -26,12 +23,13 @@ function DisplayBetween() {
     getPictures();
   };
   const getPictures = async () => {
+
     const response = await fetch(
       `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDateFormate}&end_date=${endDateFormate}`
     );
     const data = await response.json();
-
     dispatch(setGalleryPics(data));
+
     console.log(galleryPics);
   };
   //https://reactdatepicker.com/ - Date Range using input with clear button
@@ -47,7 +45,7 @@ function DisplayBetween() {
           }}
           dateFormat="yyyy-MM-dd"
           maxDate={new Date()}
-          isClearable={true}
+          // isClearable={true}
           showYearDropdown
           showMonthDropdown
           dropdownMode="select"
