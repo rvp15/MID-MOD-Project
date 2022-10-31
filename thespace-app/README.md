@@ -13,7 +13,12 @@
 
 >Technology Implemented
 
-The website is developed with ReactJS,Redux,BootStrap,CSS,Used Browser Local Storage
+The website is developed with 
+- ReactJS
+- Redux
+- BootStrap
+- CSS
+Used Browser Local Storage
 
 >Routes
 
