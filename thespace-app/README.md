@@ -32,7 +32,7 @@ The website is developed with
 
 >Challenges 
 
-- Getting Google Map to showup was challenging as we need to set up the billing account. But Google provides with 200$ credit to use for basic level project which was really helpful.
+- Getting Google Map to showup was challenging 
 - Fetching random video was little challenging.
 
 
