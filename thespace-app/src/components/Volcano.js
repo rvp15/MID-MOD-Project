@@ -7,7 +7,7 @@ const Map = ({ center, zoom, volcanoData }) => {
   console.log(volcanoEvents);
   return (
     <div className="map">
-         <h3 className="titlemap">Explore Active Volcano around the world </h3>
+         <h3 className="titlemap">Explore Volcano around the world </h3>
       <GoogleMapReact
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_KEY }}
         defaultCenter={center}

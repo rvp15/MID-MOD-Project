@@ -9,8 +9,9 @@ import { useDispatch } from "react-redux";
 function Home() {
   const apiKey = process.env.REACT_APP_API;
   const dispatch = useDispatch();
-  // let [pod ,setPod] = useState({})
-  const { podData } = useSelector((state) => state.pod);
+
+  //useSelector:Allows you to extract data from the Redux store state,
+  const { podData } = useSelector((state) => state.pod); 
 
   const getPictureOfDay = async () => {
     try {
@@ -19,6 +20,8 @@ function Home() {
       );
       const podresponse = await response.json();
       console.log(podresponse);
+      //Dispatch is the function of Redux Store, called to dispatch an action
+      //You can connect store using dispatch only to change the state
       dispatch(setpod(podresponse));
     } catch (e) {
       console.log(e);
