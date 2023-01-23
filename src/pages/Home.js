@@ -29,8 +29,9 @@ function Home() {
     }
   };
   useEffect(() => {
-    getPictureOfDay();
-  }, []);
+   getPictureOfDay();
+    // eslint-disable-next-line
+  },[]);
 
   return (
     <div>

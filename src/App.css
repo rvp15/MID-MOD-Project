@@ -109,3 +109,7 @@
   padding-left: 40%;
   margin-bottom: 0px;
 }
+.video{
+  max-width:100%;
+  max-height: 100%;
+}
